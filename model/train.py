@@ -36,6 +36,7 @@ def train(model, args, log, loss_criterion, optimizer, scheduler):
         start_train = time.time()
         model.train()
         train_loss = 0
+        print("Starting batches.. ", train_num_batch)
         for batch_idx in range(train_num_batch):
             start_idx = batch_idx * args.batch_size
             end_idx = min(num_train, (batch_idx + 1) * args.batch_size)

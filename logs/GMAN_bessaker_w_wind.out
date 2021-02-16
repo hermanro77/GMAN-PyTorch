@@ -1,0 +1,309 @@
+compute-4-0-18.foreman.hpc.ntnu.no
+K=8, L=1, SE_file='./data/SE(Bessaker)_with_wind.txt', batch_size=32, d=8, decay_epoch=10, learning_rate=0.001, log_file='./data/log', max_epoch=1, model_file='./GMAN_Bessaker_w_wind.pkl', num_his=12, num_pred=12, patience=10, test_ratio=0.2, time_slot=5, traffic_file='./data/Bessaker.h5', train_ratio=0.7, val_ratio=0.1
+loading data...
+trainX: torch.Size([40709, 12, 27])		 trainY: torch.Size([40709, 12, 27])
+valX:   torch.Size([5796, 12, 27])		valY:   torch.Size([5796, 12, 27])
+testX:   torch.Size([11615, 12, 27])		testY:   torch.Size([11615, 12, 27])
+mean:   7.6509		std:   38.5244
+data loaded!
+compiling model...
+trainable parameters: 209,923
+**** training model ****
+Starting batches..  1273
+Training batch: 5 in epoch:0, training batch loss:464.8073
+Training batch: 10 in epoch:0, training batch loss:259.6415
+Training batch: 15 in epoch:0, training batch loss:196.1857
+Training batch: 20 in epoch:0, training batch loss:290.6136
+Training batch: 25 in epoch:0, training batch loss:230.4777
+Training batch: 30 in epoch:0, training batch loss:198.3676
+Training batch: 35 in epoch:0, training batch loss:186.5625
+Training batch: 40 in epoch:0, training batch loss:173.0645
+Training batch: 45 in epoch:0, training batch loss:176.1121
+Training batch: 50 in epoch:0, training batch loss:295.4209
+Training batch: 55 in epoch:0, training batch loss:145.6259
+Training batch: 60 in epoch:0, training batch loss:387.7013
+Training batch: 65 in epoch:0, training batch loss:229.0922
+Training batch: 70 in epoch:0, training batch loss:150.3488
+Training batch: 75 in epoch:0, training batch loss:389.9166
+Training batch: 80 in epoch:0, training batch loss:244.4108
+Training batch: 85 in epoch:0, training batch loss:162.2429
+Training batch: 90 in epoch:0, training batch loss:319.3955
+Training batch: 95 in epoch:0, training batch loss:188.3669
+Training batch: 100 in epoch:0, training batch loss:225.5997
+Training batch: 105 in epoch:0, training batch loss:226.2728
+Training batch: 110 in epoch:0, training batch loss:185.0067
+Training batch: 115 in epoch:0, training batch loss:178.6924
+Training batch: 120 in epoch:0, training batch loss:163.7423
+Training batch: 125 in epoch:0, training batch loss:209.6998
+Training batch: 130 in epoch:0, training batch loss:124.4680
+Training batch: 135 in epoch:0, training batch loss:179.4892
+Training batch: 140 in epoch:0, training batch loss:202.7590
+Training batch: 145 in epoch:0, training batch loss:331.8512
+Training batch: 150 in epoch:0, training batch loss:165.0813
+Training batch: 155 in epoch:0, training batch loss:171.7993
+Training batch: 160 in epoch:0, training batch loss:121.0658
+Training batch: 165 in epoch:0, training batch loss:190.9133
+Training batch: 170 in epoch:0, training batch loss:211.6740
+Training batch: 175 in epoch:0, training batch loss:220.6111
+Training batch: 180 in epoch:0, training batch loss:148.4722
+Training batch: 185 in epoch:0, training batch loss:158.5065
+Training batch: 190 in epoch:0, training batch loss:194.1553
+Training batch: 195 in epoch:0, training batch loss:258.3686
+Training batch: 200 in epoch:0, training batch loss:160.5627
+Training batch: 205 in epoch:0, training batch loss:151.6410
+Training batch: 210 in epoch:0, training batch loss:134.6206
+Training batch: 215 in epoch:0, training batch loss:132.8211
+Training batch: 220 in epoch:0, training batch loss:149.4648
+Training batch: 225 in epoch:0, training batch loss:293.0268
+Training batch: 230 in epoch:0, training batch loss:164.8674
+Training batch: 235 in epoch:0, training batch loss:185.2326
+Training batch: 240 in epoch:0, training batch loss:179.4686
+Training batch: 245 in epoch:0, training batch loss:219.0152
+Training batch: 250 in epoch:0, training batch loss:126.1672
+Training batch: 255 in epoch:0, training batch loss:322.4139
+Training batch: 260 in epoch:0, training batch loss:207.7110
+Training batch: 265 in epoch:0, training batch loss:160.8398
+Training batch: 270 in epoch:0, training batch loss:259.3450
+Training batch: 275 in epoch:0, training batch loss:251.5382
+Training batch: 280 in epoch:0, training batch loss:300.3359
+Training batch: 285 in epoch:0, training batch loss:164.3508
+Training batch: 290 in epoch:0, training batch loss:204.5298
+Training batch: 295 in epoch:0, training batch loss:146.3867
+Training batch: 300 in epoch:0, training batch loss:141.8401
+Training batch: 305 in epoch:0, training batch loss:153.3022
+Training batch: 310 in epoch:0, training batch loss:227.8081
+Training batch: 315 in epoch:0, training batch loss:201.0041
+Training batch: 320 in epoch:0, training batch loss:211.9107
+Training batch: 325 in epoch:0, training batch loss:200.1102
+Training batch: 330 in epoch:0, training batch loss:148.4880
+Training batch: 335 in epoch:0, training batch loss:182.8553
+Training batch: 340 in epoch:0, training batch loss:298.5898
+Training batch: 345 in epoch:0, training batch loss:161.4219
+Training batch: 350 in epoch:0, training batch loss:208.0170
+Training batch: 355 in epoch:0, training batch loss:285.4990
+Training batch: 360 in epoch:0, training batch loss:178.9822
+Training batch: 365 in epoch:0, training batch loss:234.0490
+Training batch: 370 in epoch:0, training batch loss:167.3238
+Training batch: 375 in epoch:0, training batch loss:196.9291
+Training batch: 380 in epoch:0, training batch loss:189.5847
+Training batch: 385 in epoch:0, training batch loss:232.4144
+Training batch: 390 in epoch:0, training batch loss:138.1101
+Training batch: 395 in epoch:0, training batch loss:274.6319
+Training batch: 400 in epoch:0, training batch loss:151.1856
+Training batch: 405 in epoch:0, training batch loss:163.1064
+Training batch: 410 in epoch:0, training batch loss:338.1723
+Training batch: 415 in epoch:0, training batch loss:231.0375
+Training batch: 420 in epoch:0, training batch loss:228.2828
+Training batch: 425 in epoch:0, training batch loss:161.2659
+Training batch: 430 in epoch:0, training batch loss:240.1366
+Training batch: 435 in epoch:0, training batch loss:202.7935
+Training batch: 440 in epoch:0, training batch loss:181.0348
+Training batch: 445 in epoch:0, training batch loss:274.3430
+Training batch: 450 in epoch:0, training batch loss:258.9283
+Training batch: 455 in epoch:0, training batch loss:250.8977
+Training batch: 460 in epoch:0, training batch loss:267.3746
+Training batch: 465 in epoch:0, training batch loss:157.9950
+Training batch: 470 in epoch:0, training batch loss:180.0400
+Training batch: 475 in epoch:0, training batch loss:163.0936
+Training batch: 480 in epoch:0, training batch loss:220.2916
+Training batch: 485 in epoch:0, training batch loss:183.4516
+Training batch: 490 in epoch:0, training batch loss:185.2381
+Training batch: 495 in epoch:0, training batch loss:224.4478
+Training batch: 500 in epoch:0, training batch loss:213.2293
+Training batch: 505 in epoch:0, training batch loss:169.4531
+Training batch: 510 in epoch:0, training batch loss:293.2572
+Training batch: 515 in epoch:0, training batch loss:86.4137
+Training batch: 520 in epoch:0, training batch loss:267.4268
+Training batch: 525 in epoch:0, training batch loss:126.0893
+Training batch: 530 in epoch:0, training batch loss:241.5711
+Training batch: 535 in epoch:0, training batch loss:220.4272
+Training batch: 540 in epoch:0, training batch loss:190.5770
+Training batch: 545 in epoch:0, training batch loss:182.8091
+Training batch: 550 in epoch:0, training batch loss:272.7952
+Training batch: 555 in epoch:0, training batch loss:203.4769
+Training batch: 560 in epoch:0, training batch loss:231.0202
+Training batch: 565 in epoch:0, training batch loss:188.9252
+Training batch: 570 in epoch:0, training batch loss:243.0079
+Training batch: 575 in epoch:0, training batch loss:206.3995
+Training batch: 580 in epoch:0, training batch loss:144.3623
+Training batch: 585 in epoch:0, training batch loss:212.3248
+Training batch: 590 in epoch:0, training batch loss:102.5392
+Training batch: 595 in epoch:0, training batch loss:159.4632
+Training batch: 600 in epoch:0, training batch loss:186.8066
+Training batch: 605 in epoch:0, training batch loss:127.9941
+Training batch: 610 in epoch:0, training batch loss:265.8839
+Training batch: 615 in epoch:0, training batch loss:254.6657
+Training batch: 620 in epoch:0, training batch loss:185.3868
+Training batch: 625 in epoch:0, training batch loss:144.9827
+Training batch: 630 in epoch:0, training batch loss:114.7908
+Training batch: 635 in epoch:0, training batch loss:187.3442
+Training batch: 640 in epoch:0, training batch loss:296.3589
+Training batch: 645 in epoch:0, training batch loss:184.0069
+Training batch: 650 in epoch:0, training batch loss:161.9758
+Training batch: 655 in epoch:0, training batch loss:309.9678
+Training batch: 660 in epoch:0, training batch loss:166.8289
+Training batch: 665 in epoch:0, training batch loss:111.3272
+Training batch: 670 in epoch:0, training batch loss:235.9665
+Training batch: 675 in epoch:0, training batch loss:223.1700
+Training batch: 680 in epoch:0, training batch loss:259.2819
+Training batch: 685 in epoch:0, training batch loss:240.9441
+Training batch: 690 in epoch:0, training batch loss:213.3718
+Training batch: 695 in epoch:0, training batch loss:219.1425
+Training batch: 700 in epoch:0, training batch loss:145.8074
+Training batch: 705 in epoch:0, training batch loss:126.1486
+Training batch: 710 in epoch:0, training batch loss:207.8438
+Training batch: 715 in epoch:0, training batch loss:113.8834
+Training batch: 720 in epoch:0, training batch loss:153.5023
+Training batch: 725 in epoch:0, training batch loss:158.8911
+Training batch: 730 in epoch:0, training batch loss:110.4918
+Training batch: 735 in epoch:0, training batch loss:234.4893
+Training batch: 740 in epoch:0, training batch loss:257.5110
+Training batch: 745 in epoch:0, training batch loss:189.3348
+Training batch: 750 in epoch:0, training batch loss:226.4239
+Training batch: 755 in epoch:0, training batch loss:198.1064
+Training batch: 760 in epoch:0, training batch loss:185.4202
+Training batch: 765 in epoch:0, training batch loss:112.3473
+Training batch: 770 in epoch:0, training batch loss:231.3812
+Training batch: 775 in epoch:0, training batch loss:172.2162
+Training batch: 780 in epoch:0, training batch loss:222.1112
+Training batch: 785 in epoch:0, training batch loss:217.5979
+Training batch: 790 in epoch:0, training batch loss:173.2216
+Training batch: 795 in epoch:0, training batch loss:269.6208
+Training batch: 800 in epoch:0, training batch loss:146.5113
+Training batch: 805 in epoch:0, training batch loss:191.9109
+Training batch: 810 in epoch:0, training batch loss:232.2448
+Training batch: 815 in epoch:0, training batch loss:193.4193
+Training batch: 820 in epoch:0, training batch loss:243.6885
+Training batch: 825 in epoch:0, training batch loss:139.8637
+Training batch: 830 in epoch:0, training batch loss:169.8607
+Training batch: 835 in epoch:0, training batch loss:219.1192
+Training batch: 840 in epoch:0, training batch loss:307.9713
+Training batch: 845 in epoch:0, training batch loss:143.9130
+Training batch: 850 in epoch:0, training batch loss:296.3321
+Training batch: 855 in epoch:0, training batch loss:283.3625
+Training batch: 860 in epoch:0, training batch loss:138.1849
+Training batch: 865 in epoch:0, training batch loss:123.3091
+Training batch: 870 in epoch:0, training batch loss:212.8486
+Training batch: 875 in epoch:0, training batch loss:252.4292
+Training batch: 880 in epoch:0, training batch loss:110.6667
+Training batch: 885 in epoch:0, training batch loss:226.9314
+Training batch: 890 in epoch:0, training batch loss:217.4247
+Training batch: 895 in epoch:0, training batch loss:230.6268
+Training batch: 900 in epoch:0, training batch loss:220.7971
+Training batch: 905 in epoch:0, training batch loss:185.9039
+Training batch: 910 in epoch:0, training batch loss:176.7561
+Training batch: 915 in epoch:0, training batch loss:216.7379
+Training batch: 920 in epoch:0, training batch loss:146.5692
+Training batch: 925 in epoch:0, training batch loss:183.4175
+Training batch: 930 in epoch:0, training batch loss:139.6350
+Training batch: 935 in epoch:0, training batch loss:209.7794
+Training batch: 940 in epoch:0, training batch loss:177.3674
+Training batch: 945 in epoch:0, training batch loss:151.2794
+Training batch: 950 in epoch:0, training batch loss:200.9314
+Training batch: 955 in epoch:0, training batch loss:152.8777
+Training batch: 960 in epoch:0, training batch loss:151.0491
+Training batch: 965 in epoch:0, training batch loss:177.8149
+Training batch: 970 in epoch:0, training batch loss:155.9395
+Training batch: 975 in epoch:0, training batch loss:173.8302
+Training batch: 980 in epoch:0, training batch loss:176.7402
+Training batch: 985 in epoch:0, training batch loss:178.7654
+Training batch: 990 in epoch:0, training batch loss:172.4691
+Training batch: 995 in epoch:0, training batch loss:143.0154
+Training batch: 1000 in epoch:0, training batch loss:174.1678
+Training batch: 1005 in epoch:0, training batch loss:180.4411
+Training batch: 1010 in epoch:0, training batch loss:200.2812
+Training batch: 1015 in epoch:0, training batch loss:157.3202
+Training batch: 1020 in epoch:0, training batch loss:192.2464
+Training batch: 1025 in epoch:0, training batch loss:255.7098
+Training batch: 1030 in epoch:0, training batch loss:226.1461
+Training batch: 1035 in epoch:0, training batch loss:129.1720
+Training batch: 1040 in epoch:0, training batch loss:206.1175
+Training batch: 1045 in epoch:0, training batch loss:285.7646
+Training batch: 1050 in epoch:0, training batch loss:105.6816
+Training batch: 1055 in epoch:0, training batch loss:173.4634
+Training batch: 1060 in epoch:0, training batch loss:240.4707
+Training batch: 1065 in epoch:0, training batch loss:168.2922
+Training batch: 1070 in epoch:0, training batch loss:175.1755
+Training batch: 1075 in epoch:0, training batch loss:189.3595
+Training batch: 1080 in epoch:0, training batch loss:191.8230
+Training batch: 1085 in epoch:0, training batch loss:196.6033
+Training batch: 1090 in epoch:0, training batch loss:192.9494
+Training batch: 1095 in epoch:0, training batch loss:153.3778
+Training batch: 1100 in epoch:0, training batch loss:181.7342
+Training batch: 1105 in epoch:0, training batch loss:240.2789
+Training batch: 1110 in epoch:0, training batch loss:370.1626
+Training batch: 1115 in epoch:0, training batch loss:108.7055
+Training batch: 1120 in epoch:0, training batch loss:151.7904
+Training batch: 1125 in epoch:0, training batch loss:331.7768
+Training batch: 1130 in epoch:0, training batch loss:153.1832
+Training batch: 1135 in epoch:0, training batch loss:212.6268
+Training batch: 1140 in epoch:0, training batch loss:241.9844
+Training batch: 1145 in epoch:0, training batch loss:193.0354
+Training batch: 1150 in epoch:0, training batch loss:210.5098
+Training batch: 1155 in epoch:0, training batch loss:165.2070
+Training batch: 1160 in epoch:0, training batch loss:136.2063
+Training batch: 1165 in epoch:0, training batch loss:253.3034
+Training batch: 1170 in epoch:0, training batch loss:220.5893
+Training batch: 1175 in epoch:0, training batch loss:180.6331
+Training batch: 1180 in epoch:0, training batch loss:188.5948
+Training batch: 1185 in epoch:0, training batch loss:197.0312
+Training batch: 1190 in epoch:0, training batch loss:193.7503
+Training batch: 1195 in epoch:0, training batch loss:222.1425
+Training batch: 1200 in epoch:0, training batch loss:143.1788
+Training batch: 1205 in epoch:0, training batch loss:179.7693
+Training batch: 1210 in epoch:0, training batch loss:255.2726
+Training batch: 1215 in epoch:0, training batch loss:246.2062
+Training batch: 1220 in epoch:0, training batch loss:328.6811
+Training batch: 1225 in epoch:0, training batch loss:135.5602
+Training batch: 1230 in epoch:0, training batch loss:191.8114
+Training batch: 1235 in epoch:0, training batch loss:121.1760
+Training batch: 1240 in epoch:0, training batch loss:199.2432
+Training batch: 1245 in epoch:0, training batch loss:172.7338
+Training batch: 1250 in epoch:0, training batch loss:154.9202
+Training batch: 1255 in epoch:0, training batch loss:186.8748
+Training batch: 1260 in epoch:0, training batch loss:211.7512
+Training batch: 1265 in epoch:0, training batch loss:230.6746
+Training batch: 1270 in epoch:0, training batch loss:156.5098
+2021-02-13 17:21:06 | epoch: 0001/1, training time: 1440.6s, inference time: 71.7s
+train loss: 202.5625, val_loss: 174.7879
+val loss decrease from inf to 174.7879, saving model to ./GMAN_Bessaker_w_wind.pkl
+Training and validation are completed, and model has been stored as ./GMAN_Bessaker_w_wind.pkl
+**** testing model ****
+loading model from ./GMAN_Bessaker_w_wind.pkl
+model restored!
+evaluating...
+testing time: 143.1s
+                MAE		RMSE		MAPE
+train            3.15		14.36		nan%
+val              3.00		13.71		nan%
+test             3.20		14.50		nan%
+performance in each prediction step
+step: 01         2.79		12.33		nan%
+step: 02         2.88		12.85		nan%
+step: 03         2.97		13.31		nan%
+step: 04         3.06		13.73		nan%
+step: 05         3.13		14.15		nan%
+step: 06         3.20		14.50		nan%
+step: 07         3.27		14.82		nan%
+step: 08         3.32		15.10		nan%
+step: 09         3.37		15.34		nan%
+step: 10         3.42		15.56		nan%
+step: 11         3.46		15.77		nan%
+step: 12         3.50		15.97		nan%
+average:         3.20		14.45		nan%
+total time: 37.3min
+Traceback (most recent call last):
+  File "main.py", line 108, in <module>
+    c.append(testPred[j, i, k])
+IndexError: index 27 is out of bounds for dimension 2 with size 27
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[5837,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

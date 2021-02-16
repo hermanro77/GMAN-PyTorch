@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 import matplotlib.pyplot as plt
 from torch.utils.data import Dataset
-
+import numpy as np
 
 # log string
 def log_string(log, string):
@@ -40,7 +40,9 @@ def seq2instance(data, num_his, num_pred):
 
 def load_data(args):
     # Traffic
-    df = pd.read_hdf(args.traffic_file)
+    df = pd.read_hdf(args.traffic_file, key="table")
+    df = df[["turbine" + str(i) for i in range(1, 26)] + ['replan_dnmi_wind_direction', 'replan_dnmi_wind_speed']]
+    df = df.replace([np.inf, -np.inf], np.nan).fillna(0)
     traffic = torch.from_numpy(df.values)
     # train/val/test
     num_step = df.shape[0]
@@ -75,9 +77,10 @@ def load_data(args):
     time = pd.DatetimeIndex(df.index)
     dayofweek = torch.reshape(torch.tensor(time.weekday), (-1, 1))
     timeofday = (time.hour * 3600 + time.minute * 60 + time.second) \
-                // time.freq.delta.total_seconds()
+                // (60 * 60) #time.freq.delta.total_seconds()
     timeofday = torch.reshape(torch.tensor(timeofday), (-1, 1))
     time = torch.cat((dayofweek, timeofday), -1)
+    
     # train/val/test
     train = time[: train_steps]
     val = time[train_steps: train_steps + val_steps]
